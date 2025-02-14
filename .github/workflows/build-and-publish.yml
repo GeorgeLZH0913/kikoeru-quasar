@@ -54,7 +54,7 @@ jobs:
         run: cd dist/ && tar -czvf spa-${GITHUB_REF##*/}.tar.gz spa/ && tar -czvf pwa-${GITHUB_REF##*/}.tar.gz pwa/
 
       - name: Release
-        uses: softprops/action-gh-release@v4
+        uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           draft: true
