@@ -1,6 +1,6 @@
 name: Build PWA artifact
 run-name: ${{ github.actor }} is running
-on: [] # disable this for now
+on: workflow_dispatch # disable this for now
 
 jobs:
   build-artifacts:
