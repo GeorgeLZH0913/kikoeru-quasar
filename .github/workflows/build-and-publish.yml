@@ -1,12 +1,6 @@
-name: Build and push
-
-on: workflow_dispatch
-# disable this for now
-#   push:
-#     branches-ignore:
-#       - "dependabot/**"
-#     tags:
-#       - v*
+name: Build PWA artifact
+run-name: ${{ github.actor }} is running
+on: [] # disable this for now
 
 jobs:
   build-artifacts:
