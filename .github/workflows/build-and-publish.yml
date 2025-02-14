@@ -1,6 +1,8 @@
 name: Build and push
 
-on: [] # disable this for now
+on: 
+  workflow_dispatch:
+# disable this for now
 #   push:
 #     branches-ignore:
 #       - "dependabot/**"
